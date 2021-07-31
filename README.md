@@ -77,11 +77,11 @@ $ sudo apt-get install git-core python-argparse python-wstool python-vcstools py
     $ cd ~/ros_ws
     $ gedit intera.sh
     ```
-    Edit : robot_hostname = "robot_hostname.local", Change "robot_hostname" to your computer hostname.
-    
-    Comment line : # your_ip="192.168.XXX.XXX"
-        
-    Uncomment line : your_hostname="my_computer.local", Change "my_computer" to your computer hostname
+         - Edit : robot_hostname = "robot_hostname.local", Change "robot_hostname" to your computer hostname.
+
+         - Comment line : # your_ip="192.168.XXX.XXX"
+
+         - Uncomment line : your_hostname="my_computer.local", Change "my_computer" to your computer hostname
     
     - Initialize your SDK environment
     ```
