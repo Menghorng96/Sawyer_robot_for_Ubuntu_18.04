@@ -89,8 +89,10 @@ $ sudo apt-get install git-core python-argparse python-wstool python-vcstools py
     $ ./intera.sh
     ```
     
-## Gazebo Simulator
-
+## [Install Gazebo Simulator](http://gazebosim.org/tutorials?tut=install_ubuntu&ver=9.0)
+```
+curl -sSL http://get.gazebosim.org | sh
+```
 
 ## Intera Interface Example
 
