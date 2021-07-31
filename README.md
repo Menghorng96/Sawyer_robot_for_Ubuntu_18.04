@@ -52,3 +52,14 @@ $ sudo apt-get install git-core python-argparse python-wstool python-vcstools py
 ```
 5. Install Intera Robot SDK
 6. 
+
+# Gazebo Simulator
+
+
+# Intera Interface Example
+
+
+
+# Moveit Configuration
+
+
