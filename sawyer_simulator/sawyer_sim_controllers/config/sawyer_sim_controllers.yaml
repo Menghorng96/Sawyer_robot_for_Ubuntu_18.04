@@ -42,9 +42,6 @@ robot:
       right_j6_controller:
         joint: right_j6
         pid: {p: 50.0,  i: 10.0, d: 4.0}
-      Turnable_Table_joint_controller:
-        joint: Turnable_Table_joint
-        pid: {p: 2.0, i: 0.10, d: 0.0}
 
   # Sawyer SDK Controllers: Velocity --------------------------
   right_joint_velocity_controller:
