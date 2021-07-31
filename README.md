@@ -91,7 +91,7 @@ $ curl -sSL http://get.gazebosim.org | sh
 
 ## Intera Interface Example
 
-   -Build
+   - Build
    ```
    $ cd ~/ros_ws
    $ catkin_make
