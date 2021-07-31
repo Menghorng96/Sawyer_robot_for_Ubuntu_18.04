@@ -103,7 +103,7 @@ $ curl -sSL http://get.gazebosim.org | sh
    ```
    - Source ROS Setup
    ```
-   source devel/setup.bash
+   $ source devel/setup.bash
    ```
    - Ros launch
    ```
