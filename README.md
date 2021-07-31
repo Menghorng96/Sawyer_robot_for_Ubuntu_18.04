@@ -12,7 +12,7 @@
    $ sudo apt install curl # if you haven't already installed curl
    $ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
    ```
-   Or:
+     Or:
    ```
    $ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116 
    ```
@@ -81,7 +81,7 @@ $ sudo apt-get install git-core python-argparse python-wstool python-vcstools py
     
     Comment line : # your_ip="192.168.XXX.XXX"
         
-    Comment line : your_hostname="my_computer.local", Change "my_computer" to your computer hostname
+    Uncomment line : your_hostname="my_computer.local", Change "my_computer" to your computer hostname
     
     - Initialize your SDK environment
     ```
