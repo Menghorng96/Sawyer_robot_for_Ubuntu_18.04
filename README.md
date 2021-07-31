@@ -1,6 +1,6 @@
 # Sawyer_robot_for_Ubuntu_18.04
 
-### Workstation Setup
+## Workstation Setup
 1. Install Ubuntu 18.04
 2. [Install ROS Melodic for Unbuntu 18.04](http://wiki.ros.org/melodic/Installation/Ubuntu)
    - Setup your sources.list: 
@@ -53,13 +53,13 @@ $ sudo apt-get install git-core python-argparse python-wstool python-vcstools py
 5. Install Intera Robot SDK
 6. 
 
-# Gazebo Simulator
+## Gazebo Simulator
 
 
-# Intera Interface Example
+## Intera Interface Example
 
 
 
-# Moveit Configuration
+## Moveit Configuration
 
 
