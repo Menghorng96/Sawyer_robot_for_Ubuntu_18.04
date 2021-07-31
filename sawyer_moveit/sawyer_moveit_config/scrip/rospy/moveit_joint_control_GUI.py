@@ -106,35 +106,3 @@ while not rospy.is_shutdown():
         except KeyboardInterrupt:
             print "Ctrl+c"
             break
-
-
-#joint_goal = move_group.get_current_joint_values()
-#joint_goal[0] = 0
-#joint_goal[1] = -pi/4
-#joint_goal[2] = 0
-#joint_goal[3] = -pi/2
-#joint_goal[4] = 0
-#joint_goal[5] = pi/3
-#joint_goal[6] = 0
-#move_group.go(joint_goal, wait=True)
-#move_group.stop()
-#pose_goal = geometry_msgs.msg.Pose()
-#pose_goal.orientation.w = 1.0
-#pose_goal.position.x = 0.5
-#pose_goal.position.y = 0.5
-#pose_goal.position.z = 0.5
-#move_group.set_pose_target(pose_goal)
-#plan = move_group.go(wait=True)
-# We can also print the name of the end-effector link for this group:
-#eef_link = move_group.get_end_effector_link()
-#print "============ End effector link: %s" % eef_link
-
-# We can get a list of all the groups in the robot:
-#group_names = robot.get_group_names()
-#    print "============ Available Planning Groups:", robot.get_group_names()
-
-# Sometimes for debugging it is useful to print the entire state of the
-# robot:
-#print "============ Printing robot state"
-#print robot.get_current_state()
-#print ""## END_SUB_TUTORIAL
