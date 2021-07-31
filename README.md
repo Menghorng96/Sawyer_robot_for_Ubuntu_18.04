@@ -82,22 +82,49 @@ $ sudo apt-get install git-core python-argparse python-wstool python-vcstools py
          - Comment line : # your_ip="192.168.XXX.XXX"
 
          - Uncomment line : your_hostname="my_computer.local", Change "my_computer" to your computer hostname
-    
-    - Initialize your SDK environment
-    ```
-    $ cd ~/ros_ws
-    $ ./intera.sh
-    ```
+ 
     
 ## [Install Gazebo Simulator](http://gazebosim.org/tutorials?tut=install_ubuntu&ver=9.0)
 ```
-curl -sSL http://get.gazebosim.org | sh
+$ curl -sSL http://get.gazebosim.org | sh
 ```
 
 ## Intera Interface Example
 
+   -Build
+   ```
+   $ cd ~/ros_ws
+   $ catkin_make
+   ```
 
-
+   - Initialize your SDK environment
+   ```   
+   $ ./intera.sh
+   ```
+   - Source ROS Setup
+   ```
+   source devel/setup.bash
+   ```
+   - Ros launch
+   ```
+   $ roslaunch sawyer_gazebo sawyer_world.launch
+   ```
+   - Ros run
+      1. Open new terminal
+      2. Initialize SDK environment
+      ```
+      $ cd ~/ros_ws
+      $ ./intera.sh
+      ```
+      3. Permission 
+      ```
+      $ cd ~/ros_ws/src/Sawyer_robot_for_Ubuntu_18.04/intera_sdk/intera_examples/scripts
+      $ chmod +x inter_interface_joint_angle.py
+      ```
+      4. Run python scrip
+      ```
+      $ ./inter_interface_joint_angle.py
+      ```
 ## Moveit Configuration
 
 
