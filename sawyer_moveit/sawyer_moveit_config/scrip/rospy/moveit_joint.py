@@ -12,8 +12,6 @@ import math
 import time
 import numpy as np
 from rdp import rdp
-from mapinfo_3D_without_animation import MapInfo
-from BG_csa_fo_3Drrt import RRT
 from tf.transformations import quaternion_from_euler
 from math import pi
 from std_msgs.msg import String
