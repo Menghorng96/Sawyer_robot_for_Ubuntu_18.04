@@ -55,11 +55,40 @@ $ sudo apt-get update
 $ sudo apt-get install git-core python-argparse python-wstool python-vcstools python-rosdep ros-melodic-control-msgs ros-melodic-joystick-drivers ros-melodic-xacro ros-melodic-tf2-ros ros-melodic-rviz ros-melodic-cv-bridge ros-melodic-actionlib ros-melodic-actionlib-msgs ros-melodic-dynamic-reconfigure ros-melodic-trajectory-msgs ros-melodic-rospy-message-converter
 ```
 5. Install Intera Robot SDK
-
-
-
-6. 
-
+    - Download the SDK on your workstation
+    ```
+    $ cd ~/ros_ws/src
+    $ wstool init .
+    $ git clone https://github.com/Menghorng96/Sawyer_robot_for_Ubuntu_18.04.git
+    $ wstool update
+    ```
+    - Build
+    ```
+    $ cd ~/ros_ws
+    $ catkin_make
+    ```
+6. Configure Communication/ROS Workspace
+    - Copy the intera.sh scrip
+    ```
+    $ cp ~/ros_ws/src/Sawyer_robot_for_Ubuntu_18.04/intera_sdk/intera.sh ~/ros_ws
+    ```
+    - Customize the intera.sh script For simulation
+    ```
+    $ cd ~/ros_ws
+    $ gedit intera.sh
+    ```
+    Edit : robot_hostname = "robot_hostname.local", Change "robot_hostname" to your computer hostname.
+    
+    Comment line : # your_ip="192.168.XXX.XXX"
+        
+    Comment line : your_hostname="my_computer.local", Change "my_computer" to your computer hostname
+    
+    - Initialize your SDK environment
+    ```
+    $ cd ~/ros_ws
+    $ ./intera.sh
+    ```
+    
 ## Gazebo Simulator
 
 
