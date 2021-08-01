@@ -126,5 +126,15 @@ $ curl -sSL http://get.gazebosim.org | sh
       $ ./inter_interface_joint_angle.py
       ```
 ## Moveit Configuration
+   1. [Installation](http://docs.ros.org/en/melodic/api/moveit_tutorials/html/doc/getting_started/getting_started.html)
+   ```
+   $ rosdep update
+   $ sudo apt-get update
+   $ sudo apt-get dist-upgrade
+   $ sudo apt install ros-melodic-moveit
+   ```
+   2. Configuration
+   
+   3. Demo 
 
 
