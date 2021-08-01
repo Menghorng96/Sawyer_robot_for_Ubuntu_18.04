@@ -131,7 +131,42 @@ $ curl -sSL http://get.gazebosim.org | sh
    $ sudo apt install ros-melodic-moveit
    ```
    2. Configuration
-   
+      - Include Moviet launch file in Gazebo launch file
+      ```
+      $ cd ~/ros_ws/src/Sawyer_robot_for_Ubuntu_18.04/sawyer_simulator/sawyer_gazebo/launch
+      $ gedit sawyer_world.launch
+      ```
+            - Include to the sawyer_world.launch
+            
+              <include file = "$(find sawyer_moveit_config)/launch/sawyer_moveit.launch">
+                  <arg name= "electric_gripper" value="true"/>
+              </include
+       - Permission on enable_robot.py and trajectory_controller.py
+       ```
+       $ cd ~/ros_ws/src/Sawyer_robot_for_Ubuntu_18.04/intera_sdk/intera_interface/scripts
+       $ chmod +x enable_robot.py
+       $ chmod +x trajectory_controller.py
+       ```
    3. Demo 
+      - Ros launch
+      ```
+      $ cd ~/row_ws
+      $ ./intera.sh
+      $ catkin_make
+      $ source devel/setup.bash
+      $ roslaunch sawyer_gazebo sawyer_world.launch
+      ```
+      - Run python scrip
+      ```
+      1. Open New Terminal
+      2. Inital intera
+         $ cd ~/row_ws
+         $ ./intera.sh
+      3. run python scrip
+         $ cd ~/row_ws/src/Sawyer_robot_for_Ubuntu_18.04/sawyer_moveit/sawyer_moveit_config/scrip/rospy
+         $ chmod +x moveit_joint_control_GUI.py
+         $ ./moveit_joint_control_GUI.py
+      ```
+      
 
 
