@@ -116,13 +116,10 @@ $ curl -sSL http://get.gazebosim.org | sh
       $ cd ~/ros_ws
       $ ./intera.sh
       ```
-      3. Permission 
+      3. Run python scrip
       ```
       $ cd ~/ros_ws/src/Sawyer_robot_for_Ubuntu_18.04/intera_sdk/intera_examples/scripts
       $ chmod +x inter_interface_joint_angle.py
-      ```
-      4. Run python scrip
-      ```
       $ ./inter_interface_joint_angle.py
       ```
 ## Moveit Configuration
